@@ -1,73 +1,69 @@
-# React + TypeScript + Vite
+# LVL Consulting - Prueba Técnica Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+LVL CONSULTING - Evaluación - Perfil Dev Frontend
 
-Currently, two official plugins are available:
+##Tecnologías Utilizadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+El proyecto construido utilizando un stack moderno y escalable:
 
-## React Compiler
+*   **Core:** React 18 + TypeScript + Vite.
+*   **Estilos:** Tailwind CSS (Diseño responsive y fiel al maquetado).
+*   **Navegación:** React Router DOM v6.
+*   **Gráficos:** Chart.js y React-chartjs-2.
+*   **Iconos:** Lucide React.
+*   **Imágenes:**
+    *   *Visualización:* Picsum Photos API (Para datos dummy en tablas).
+    *   *Carga (Upload):* Cloudinary API (Para subida real de archivos).
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+##  Funcionalidades Destacadas
 
-## Expanding the ESLint configuration
+1.  **Dashboard Interactivo:**
+    *   Gráficos de ventas y estadísticas visuales.
+    *   Tarjetas de resumen con indicadores de crecimiento.
+2.  **Gestión de Tablas (Data Dummy):**
+    *   Consumo de datos desde archivos JSON locales.
+    *   Integración con **Picsum API** para generar avatares dinámicos en cada fila.
+3.  **Carga de Imágenes Real (Cloudinary):**
+    *   En la sección *Administrador*, se implementó un sistema de **Drag & Drop**.
+    *   Las imágenes se suben realmente a la nube usando la API de Cloudinary.
+    *   Generación de vista previa y enlace de verificación post-subida.
+4.  **Experiencia de Usuario (UX):**
+    *   **Sidebar Colapsable:** Menú lateral dinámico que optimiza el espacio.
+    *   **Navegación Anidada:** Menú "Páginas Web" con acceso directo y submenú.
+    *   **Modales:** Formulario de contacto emergente con switches interactivos.
+5.  **Autenticación (Simulada):**
+    *   Pantallas de Login y Registro maquetadas.
+    *   Flujo de redirección inicial.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🛠️ Instalación y Ejecución
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+Sigue estos pasos para ejecutar el proyecto en tu entorno local:
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+1.  **Clonar el repositorio:**
+    ```bash
+    git clone https://github.com/Frnk24/lvl-consulting-test.git
+    ```
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+2.  **Instalar dependencias:**
+    ```bash
+    npm install
+    ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+3.  **Ejecutar el servidor de desarrollo:**
+    ```bash
+    npm run dev
+    ```
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+4.  **Abrir en el navegador:**
+    Ingresa a `http://localhost:5173/`
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## Estructura del Proyecto
+
+```text
+src/
+├── components/      # Componentes reutilizables (Sidebar, Navbar, Modales, Gráficos)
+├── data/            # Archivos JSON con datos de prueba (Dummy Data)
+├── pages/           # Vistas principales (Dashboard, Login, Tablas, Formularios)
+├── service/          # Apis para Picsum y Cloudinary 
+├── App.tsx          # Configuración principal de navegación
+└── main.tsx         # Punto de entrada
