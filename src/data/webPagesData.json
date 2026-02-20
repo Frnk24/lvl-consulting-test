@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "category": "Recursos gráficos",
+    "description": "Recursos gráficos que se usarán en páginas web que se deberán usar en su momento",
+    "date": "15/04/24 - 6:30 hrs.",
+    "tag": "Imágenes",
+    "tagColor": "orange",
+    "imageId": 237
+  },
+  {
+    "id": 2,
+    "category": "Recursos gráficos",
+    "description": "Recursos gráficos que se usarán en páginas web que se deberán usar en su momento",
+    "date": "15/04/24 - 6:30 hrs.",
+    "tag": "Imágenes",
+    "tagColor": "orange",
+    "imageId": 433
+  },
+  {
+    "id": 3,
+    "category": "Recursos gráficos",
+    "description": "Recursos gráficos que se usarán en páginas web que se deberán usar en su momento",
+    "date": "15/04/24 - 6:30 hrs.",
+    "tag": "Documento",
+    "tagColor": "green",
+    "imageId": 10
+  },
+  {
+    "id": 4,
+    "category": "Recursos gráficos",
+    "description": "Recursos gráficos que se usarán en páginas web que se deberán usar en su momento",
+    "date": "15/04/24 - 6:30 hrs.",
+    "tag": "Documento",
+    "tagColor": "green",
+    "imageId": 56
+  },
+  {
+    "id": 5,
+    "category": "Recursos gráficos",
+    "description": "Recursos gráficos que se usarán en páginas web que se deberán usar en su momento",
+    "date": "15/04/24 - 6:30 hrs.",
+    "tag": "Videos",
+    "tagColor": "blue",
+    "imageId": 88
+  },
+  {
+    "id": 6,
+    "category": "Recursos gráficos",
+    "description": "Recursos gráficos que se usarán en páginas web que se deberán usar en su momento",
+    "date": "15/04/24 - 6:30 hrs.",
+    "tag": "Videos",
+    "tagColor": "blue",
+    "imageId": 124
+  }
+]

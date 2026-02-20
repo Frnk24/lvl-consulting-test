@@ -1,0 +1,30 @@
+[
+  {
+    "title": "Ingresos",
+    "value": "S/ 460.00",
+    "change": "+ S/50K",
+    "changeType": "positive",
+    "time": "Desde el mes pasado"
+  },
+  {
+    "title": "Número de clientes",
+    "value": "4789",
+    "change": "- 30 clientes",
+    "changeType": "negative",
+    "time": "Desde el mes pasado"
+  },
+  {
+    "title": "Inversión realizada",
+    "value": "S/ 5460.00k",
+    "change": "+ S/32K",
+    "changeType": "positive",
+    "time": "Desde el mes pasado"
+  },
+  {
+    "title": "Relación de ganancia",
+    "value": "S/ 460.00",
+    "change": "- S/50K",
+    "changeType": "negative",
+    "time": "Desde el mes pasado"
+  }
+]
