@@ -35,7 +35,7 @@ El proyecto construido utilizando un stack moderno y escalable:
     *   Pantallas de Login y Registro maquetadas.
     *   Flujo de redirección inicial.
 
-## 🛠️ Instalación y Ejecución
+## Instalación y Ejecución
 
 Sigue estos pasos para ejecutar el proyecto en tu entorno local:
 
